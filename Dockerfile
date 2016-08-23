@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM ubuntu:latest
 
 MAINTAINER miessos, https://github.com/miessos
 
