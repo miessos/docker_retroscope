@@ -34,4 +34,4 @@ RUN update-alternatives --config java
 RUN update-alternatives --config javac
 
 # Configuring USB Access
-RUN wget -S -O - http://source.android.com/source/51-android.rules
+# RUN wget -S -O - http://source.android.com/source/51-android.rules
