@@ -34,7 +34,4 @@ RUN update-alternatives --config java
 RUN update-alternatives --config javac
 
 # Configuring USB Access
-RUN wget -S -O - http://source.android.com/source/51-android.rules | \
-    sed "s/<username>/$USER/" | \
-    tee >/dev/null /etc/udev/rules.d/51-android.rules | \
-    udevadm control --reload-rules
+RUN wget -S -O - http://source.android.com/source/51-android.rules
