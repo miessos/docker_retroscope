@@ -30,8 +30,7 @@ RUN apt-get install -y openjdk-8-jdk \
     unzip
 
 # Update the default Java version (optional)
-RUN update-alternatives --config java \
-    update-alternatives --config javac
+RUN update-alternatives --config java && update-alternatives --config javac
 
 # Configuring USB Access
 RUN wget -S -O - http://source.android.com/source/51-android.rules \
