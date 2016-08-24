@@ -27,7 +27,8 @@ RUN apt-get install -y openjdk-8-jdk \
     libgl1-mesa-dev \
     libxml2-utils \
     xsltproc \
-    unzip
+    unzip \
+    wget
 
 # Update the default Java version (optional)
 RUN update-alternatives --config java 
